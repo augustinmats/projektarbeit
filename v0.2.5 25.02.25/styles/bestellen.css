@@ -1,0 +1,165 @@
+body {
+	overflow: hidden;
+}
+#bestellmodus {
+	display: flex;
+	justify-content: center;
+}
+#bestellmodus button {
+	padding: 0.5em;
+	border: solid;
+	border-radius: 0.5em;
+	text-align: center;
+	margin: 2em 0.2em;
+	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+	cursor: pointer;
+}
+#bestellmodus button:hover {
+	color: var(--main-green) !important;
+	background-color: var(--schrift) !important;
+    border-color: var(--main-green);
+}
+#button_1 {
+	background-color: var(--schrift);
+	color: var(--main-green);
+}
+#button_2 {
+	color: var(--schrift);
+	background-color: var(--main-green);
+}
+#zum_warenkorb {
+	display: block;
+	position: absolute;
+	right: -8em;
+	transition: right 0.5s ease-in-out;
+}
+#div_1 #container_elemente {
+	column-count: 2;
+	column-width: 50em;
+	/*column-gap: 5em;*/
+}
+#div_1 .element {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	margin: 1em;
+}
+#div_1 .element img {
+	max-height: 10em;
+	display: inline;
+}
+#div_1 .element div {
+	display: inline-block;
+}
+#div_1 .element .in_den_warenkorb {
+	padding: 0.5em;
+	border: solid;
+	border-radius: 0.5em;
+	width: fit-content;
+	text-align: center;
+	margin: 2em 0.2em;
+	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+	cursor: pointer;
+	color: var(--schrift);
+	background-color: var(--main-green);
+	display: inline-flex;
+	align-items: center;
+}
+#div_1 .element .in_den_warenkorb img {
+	height: 1em;
+	margin-left: 0.5em;
+}
+#div_1 .element .in_den_warenkorb .g {
+	display: none;
+}
+#div_1 .element .in_den_warenkorb:hover {
+	color: rgb(0, 180, 0) !important;
+	background-color: var(--schrift) !important;
+    border-color: var(--main-green);
+}
+#div_1 .element .in_den_warenkorb:hover .g {
+	display: inline-block;
+}
+#div_1 .element .in_den_warenkorb:hover .w {
+	display: none;
+}
+
+#div_2 table {
+	width: 100%;
+}
+#div_2 th {
+	border: solid;
+	border-width: 2px;
+	width: 25%;
+	background-color: rgba(0, 180, 0, 1);
+	color: var(--schrift);
+	border-color: black;
+	font-size: xx-large;
+	padding: 0.5em;
+}
+#div_2 td {
+	border: solid;
+	border-width: 2px;
+	min-width: 17em;
+	width: 25%;
+	padding: 0;
+	position: relative;
+}
+#div_2 td img {
+	width: 100%;
+	
+}
+#div_2 td div {
+	transition: bottom 0.2s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.2s ease-in-out;
+}
+#div_2 td .text {
+	width: 90%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	text-align: center;
+	font-size: larger;
+}
+#div_2 td .preis {
+	width: 90%;
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	text-align: center;
+	font-size: larger;
+}
+#div_2 td:hover .preis {
+	bottom: 35%;
+}
+#div_2 td p span {
+	display: inline-flex;
+	align-items: center;
+}
+#div_2 td .in_den_warenkorb {
+	opacity: 0;
+	width: 90%;
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	text-align: center;
+	font-size: larger;
+	cursor: pointer;
+}
+#div_2 td:hover .in_den_warenkorb {
+	opacity: 1;
+}
+#div_2 td .in_den_warenkorb img {
+	height: 1em;
+	width: 1em;
+	margin-left: 0.5em;
+}
+#div_2 td p {
+	background-color: rgba(128, 255, 100, 0.5);
+	padding: 0.3em;
+	margin: 0;
+	border-radius: 0.5em;
+}
+#div_2 td:hover p {
+	background-color: rgba(0, 180, 0, 0.75);
+	color: var(--schrift);
+}

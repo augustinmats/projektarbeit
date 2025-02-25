@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Webshop</title>
+        <link rel="stylesheet" type="text/css" href="../styles/index.css" />
+    </head>
+    <body>
+        <header></header> <!-- Die Navigationsleiste wird seperat geladen-->
+        <main>
+            <div id="frischeparadies">
+                <img src="../img/obstkorb.jpg" />
+                <div id="frischeparadies_titel">
+                    <h1>Frischeparadies</h1>
+                    <h2>frisch und gesund - für Euch</h2>
+                </div>
+            </div>
+            <div id="bestellen">
+                <div id="menus">
+                    <h1>
+                        <a href="bestellen.html" onclick="sessionStorage.setItem('bestellmodus', '1')">Unsere Produkte</a>
+                    </h1>
+                    <p>Hier geht's zu unseren Produkten, alle mit Liebe zusammengestellt und bestehend aus ausgewählten Zutaten:</p>
+                    <img src="../img/produkte.jpg" />
+                </div>
+                <div id="eigenes_menu">
+                    <img src="../img/obstschale.jpg" />
+                    <p>Hier könnt ihr all unsere Zutaten einzeln erhalten:</p>
+                    <h1>
+                        <a href="bestellen.html" onclick="sessionStorage.setItem('bestellmodus', '2')">Einzelne Zutaten</a>
+                    </h1>
+                </div>
+            </div>
+        </main>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

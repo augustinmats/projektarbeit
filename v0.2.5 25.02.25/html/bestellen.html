@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <title>Bestellen</title>
+        <link rel="stylesheet" type="text/css" href="../styles/bestellen.css" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div id="bestellmodus">
+                <button id="button_1" onclick="bestellmodus('1')">Fertige Zusammenstellungen</button>
+                <button id="button_2" onclick="bestellmodus('2')">Einzelne Produkte</button>
+            </div>
+            <a id="zum_warenkorb" href="warenkorb.html">Zum Warenkorb</a>
+            <div id="div_1">
+                <div id="container_elemente">
+                    <div class="element">
+                        <img src="../img/produkte.jpg" title="bild" />
+                        <div class="title">Titel des Menüs</div>
+                        <div class="inhalt">
+                            Enthält:
+                            <ul>
+                                <li>1x ...</li>
+                                <li>2x ...</li>
+                            </ul>
+                        </div>
+                        <div class="in_den_warenkorb" onclick="warenkorb_add('Artikel_1')">
+                            In den Warenkorb
+                            <img class="w" src="../img/warenkorb_w.png" />
+                            <img src="../img/warenkorb_g.png" class="g" />
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="../img/produkte.jpg" title="bild" />
+                        <div class="title">Titel des Menüs</div>
+                        <div class="inhalt">
+                            Enthält:
+                            <ul>
+                                <li>1x ...</li>
+                                <li>2x ...</li>
+                            </ul>
+                        </div>
+                        <div class="in_den_warenkorb" onclick="warenkorb_add('Artikel_2')">
+                            In den Warenkorb
+                            <img class="w" src="../img/warenkorb_w.png" />
+                            <img src="../img/warenkorb_g.png" class="g" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div_2">
+                <table>
+                    <tr>
+                        <th>Obst</th>
+                        <th>Gemüse</th>
+                        <th>Backwaren</th>
+                        <th>Gemischtes</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../img/apple.jpg" />
+                            <div class="text"><p>Bio-Äpfel aus der Region</p></div>
+                            <div class="preis"><p>Preis: 3,99€ pro kg</p></div>
+                            <div class="in_den_warenkorb">
+                                <a onclick="warenkorb_add('Produkt_1')">
+                                    <p>
+                                        <span>In den Warenkorb <img src="../img/in-den-warenkorb-legen_w.png" /></span>
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="../img/salad.jpg" />
+                            <div class="text"><p>Kopfsalat aus eigenem Anbau</p></div>
+                            <div class="preis"><p>Preis: 3,99€ pro kg</p></div>
+                            <div class="in_den_warenkorb">
+                                <a onclick="warenkorb_add('Produkt_2')">
+                                    <p>
+                                        <span>In den Warenkorb <img src="../img/in-den-warenkorb-legen_w.png" /> </span>
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="../img/bread.jpg" />
+                            <div class="text"><p>Bio-Landbrot vom regionalen Bäcker</p></div>
+                            <div class="preis"><p>Preis: 3,99€ pro kg</p></div>
+                            <div class="in_den_warenkorb">
+                                <a onclick="warenkorb_add('Produkt_3')">
+                                    <p>
+                                        <span>In den Warenkorb <img src="../img/in-den-warenkorb-legen_w.png" /> </span>
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="text"><p></p></div>
+                            <div class="preis"><p>Preis: 3,99€ pro kg</p></div>
+                            <div class="in_den_warenkorb">
+                                <a onclick="warenkorb_add('Produkt_4')">
+                                    <p>
+                                        <span>In den Warenkorb<img src="../img/in-den-warenkorb-legen_w.png" /></span>
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><div></div></a>
+                        </td>
+                        <td>
+                            <a href=""><div></div></a>
+                        </td>
+                        <td>
+                            <a href=""><div></div></a>
+                        </td>
+                        <td>
+                            <a href=""><div></div></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script src="../js/bestellen.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

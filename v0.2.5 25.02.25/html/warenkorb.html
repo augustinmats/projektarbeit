@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="../styles/warenkorb.css" />
+        <title>Frischeparadies - Warenkorb</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>Warenkorb</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="produkt">Produkt</th>
+                        <th class="anzahl">Anzahl</th>
+                        <th class="preis">Preis je Stück</th>
+                        <th class="summe">Summe</th>
+                    </tr>
+                </thead>
+                <tbody id="append"></tbody>
+            </table>
+            <p id="warenkorb_leer"></p>
+            <div id="gesamt">
+                <p id="summe">
+                    Gesamt: 
+                    <span id="gesamtsumme">0,- €</span>
+                </p>
+                <div id="zur_kasse" onclick="kasse('block')">
+                    <span>Kasse</span>
+                </div>
+            </div>
+            <br />Temporär:
+            <button onclick="localStorage.removeItem('warenkorb'); location.reload()">
+                Warenkorb leeren und neu laden
+            </button>
+        </main>
+        <div id="kasse">
+            <img src="../img/x_hellgrau.png" onclick="kasse('none')">
+            <p>Leider können wir als Schulprojekt kein Bezahlsystem hinzufügen. Wir bitten um Verständnis.</p>
+        </div>
+        <script src="../js/warenkorb.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

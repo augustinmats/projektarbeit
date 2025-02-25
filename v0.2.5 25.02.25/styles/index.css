@@ -1,0 +1,125 @@
+#frischeparadies,
+#menus,
+#eigenes_menu {
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+#frischeparadies {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#frischeparadies_titel {
+    position: absolute;
+    color: var(--schrift);
+    top: 40%;
+    font-size: 175%;
+    background-color: rgba(50, 220, 50, 0.66);
+    border-radius: 20px;
+    padding: 0 0.75em;
+    margin: 1rem;
+}
+#frischeparadies_titel h1,
+#frischeparadies_titel h2 {
+    text-align: center;
+    margin: 0;
+    line-height: 1.5em;
+}
+#frischeparadies img {
+    width: 100%;
+    border-radius: 0.5em;
+}
+@media only screen and (min-width: 1200px) {
+    #bestellen {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menus, #eigenes_menu {
+        background-color: var(--main-green);
+        padding: 1em;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 10em;
+        display: flex;
+        margin-right: 0.5em;
+        width: 50%;
+    }
+    #bestellen h1 {
+        padding: 0.5em;
+        border: solid;
+        border-radius: 0.5em;
+        color: var(--schrift);
+        width: fit-content;
+        text-align: center;
+    	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+        cursor: pointer;
+        margin: 0;
+    }
+    #bestellen a {
+        color: var(--schrift);
+        text-decoration: none;
+    }
+    #bestellen h1:hover {
+        background-color: var(--schrift);
+        border-color: var(--main-green);
+    }
+    #bestellen h1:hover a {
+        color: var(--main-green);
+    }
+    #bestellen p {
+        margin: 0 1em;
+        font-size: larger;
+        text-align: center;
+        color: var(--schrift);
+        max-width: 15em;
+    }
+    #bestellen img {
+        width: 30%;
+        border-radius: 0.5em;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #menus, #eigenes_menu {
+        background-color: var(--main-green);
+        padding: 1em;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    #bestellen h1 {
+        padding: 0.5em;
+        border: solid;
+        border-radius: 0.5em;
+        color: var(--schrift);
+        width: fit-content;
+        max-width: 25%;
+        text-align: center;
+    	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+        cursor: pointer;
+        margin: 0;
+    }
+    #bestellen a {
+        color: var(--schrift);
+        text-decoration: none;
+    }
+    #bestellen h1:hover {
+        background-color: var(--schrift);
+        border-color: var(--main-green);
+    }
+    #bestellen h1:hover a {
+        color: var(--main-green);
+    }
+    #bestellen p {
+        margin: 0 1em;
+        font-size: larger;
+        text-align: center;
+        color: var(--schrift);
+        max-width: 15em;;
+    }
+    #bestellen img {
+        width: 30%;
+        border-radius: 0.5em;
+    }
+}

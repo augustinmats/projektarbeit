@@ -1,0 +1,10 @@
+.kontakt td {
+    border: solid;
+    color: gray;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+h3 {
+    margin-bottom: -1em;
+    margin-top: 0;
+}
